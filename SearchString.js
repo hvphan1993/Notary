@@ -145,11 +145,11 @@ function performMark() {
     }
 
     var re = new RegExp(keyword, "gi" );
-    var replaceText = "<mark id='markme'>$&</markme>";
+    var replaceText = "<mark id='markme'>$&</mark>";
     var bookContent = display.innerHTML;
 
     // add the mark to the book content
-    newContent = bookContent.replace(re,replaceText);
+    newContent = bookContent.replace(re, replaceText);
 
     display.innerHTML = newContent;
     var count = document.querySelectorAll('mark').length;
